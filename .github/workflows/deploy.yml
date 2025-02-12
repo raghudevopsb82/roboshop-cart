@@ -12,6 +12,7 @@ jobs:
         - run: |
             echo $PATH
             bash argocd.sh cart dev
+          shell: bash
           name: Deployment
 
     QA:
