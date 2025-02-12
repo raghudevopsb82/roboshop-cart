@@ -11,7 +11,7 @@ jobs:
             repository: raghudevopsb82/roboshop-helm
         - run: |
             echo $PATH
-            bash -le argocd.sh cart dev
+            bash argocd.sh cart dev
           name: Deployment
 
     QA:
