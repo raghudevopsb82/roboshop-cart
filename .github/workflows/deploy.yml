@@ -5,10 +5,10 @@ jobs:
     DEV:
       runs-on: self-hosted
       steps:
-      - name: Checkout helm repo
-        uses: actions/checkout@v4
-        with:
-          repository: raghudevopsb82/roboshop-helm
+        - name: Checkout helm repo
+          uses: actions/checkout@v4
+          with:
+            repository: raghudevopsb82/roboshop-helm
         - run: |
             ls -l
           name: Deployment
