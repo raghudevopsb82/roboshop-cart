@@ -1,6 +1,6 @@
 name: Cart Deployment
 run-name: Cart Deployment
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
     DEV:
       runs-on: self-hosted
