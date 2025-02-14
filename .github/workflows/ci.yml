@@ -7,7 +7,11 @@ jobs:
     with:
       component: cart
 
-
+  deploy:
+    needs: ci
+    uses: raghudevopsb82/github-reusable-actions/.github/workflows/deploy.yml@main
+    with:
+      component: cart
 
 
 
