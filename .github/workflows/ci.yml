@@ -1,5 +1,5 @@
-name: Cart CI
-run-name: Cart CI
+name: Cart CICD
+run-name: Cart CICD
 on: [push]
 jobs:
   ci:
