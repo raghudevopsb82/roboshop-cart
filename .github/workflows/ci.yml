@@ -1,0 +1,15 @@
+name: Cart CI
+run-name: Cart CI
+on: [push]
+jobs:
+  ci:
+    uses: raghudevopsb82/github-reusable-actions/.github/workflows/ci.yml@main
+    with:
+      component: cart
+
+
+
+
+
+
+
