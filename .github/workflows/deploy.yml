@@ -1,6 +1,6 @@
 name: Cart Deployment
 run-name: Cart Deployment
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 jobs:
   deploy:
     uses: raghudevopsb82/github-reusable-actions/.github/workflows/deploy.yml@main
