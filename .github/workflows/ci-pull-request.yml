@@ -1,0 +1,21 @@
+name: Cart CICD - Pull Request
+run-name: Cart CICD - Pull Request
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ci:
+    uses: raghudevopsb82/github-reusable-actions/.github/workflows/ci-pull-request.yml@main
+    with:
+      component: cart
+      appType: nodejs
+    secrets:
+      VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+
+
+
+
+
+
+
