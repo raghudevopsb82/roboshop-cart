@@ -15,7 +15,7 @@ const counter = new promClient.Counter({
 });
 
 
-var redisConnected = false;
+let redisConnected = false;
 
 var redisHost = process.env.REDIS_HOST || 'redis'
 var catalogueHost = process.env.CATALOGUE_HOST || 'catalogue'
@@ -365,7 +365,7 @@ function saveCart(id, cart) {
 }
 
 // connect to Redis
-var redisClient = redis.createClient({
+let redisClient = redis.createClient({
     host: redisHost
 });
 
