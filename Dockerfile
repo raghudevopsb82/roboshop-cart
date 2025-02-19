@@ -1,4 +1,5 @@
 FROM        node
 USER        node
 WORKDIR     /home/node
-COPY
+COPY        node_modules package.json server.js ./
+
